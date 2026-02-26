@@ -1,5 +1,5 @@
-people = {}
 class Person:
+    people = {}
 
     def __init__(self, name: str, age: int) -> None:
         self.name = name
@@ -8,6 +8,7 @@ class Person:
 
 
 def create_person_list(people: list) -> list:
+    Person.people.clar()
     person_list = [Person(person_dict["name"],
                           person_dict["age"]) for person_dict in people]
     for person_dict in people:
